@@ -31,16 +31,24 @@ async function addBlockToPage() {
                 {
                   type: 'text',
                   text: {
-                    content: '새로운 단락 내용입니다.',
-                    link: null,
+                    content: 'Google Drive Link', // 표시할 텍스트
+                    link: {
+                      url: 'https://drive.google.com/file/d/1SqKm3MeIVSuNHBKxqF2UuQB37Uv5vVVf/view?usp=drive_link', // 구글 드라이브 링크
+                    },
                   },
                   annotations: {
-                    color: 'blue',
+                    bold: false,
+                    italic: false,
+                    strikethrough: false,
+                    underline: false,
+                    code: false,
+                    color: 'default'
                   },
                 },
               ],
             },
           },
+          
           // 추가하고 싶은 다른 블록들을 여기에 포함시킬 수 있습니다.
         ],
       });
