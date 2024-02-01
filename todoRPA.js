@@ -34,6 +34,9 @@ async function addBlockToPage() {
                     content: '새로운 단락 내용입니다.',
                     link: null,
                   },
+                  annotations: {
+                    color: 'blue',
+                  },
                 },
               ],
             },
